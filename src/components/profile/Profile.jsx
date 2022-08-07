@@ -1,6 +1,11 @@
 import PropTypes from 'prop-types';
 import {
   Card,
+  Description,
+  Avatar,
+  Name,
+  Tag,
+  Location,
   Stats,
   StatsItem,
   StatsItemLabel,
@@ -16,12 +21,12 @@ export const Profile = ({
 }) => {
   return (
     <Card className="profile">
-      <div className="description">
-        <img src={avatar} alt="User avatar" className="avatar" width={120} />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
-      </div>
+      <Description className="description">
+        <Avatar src={avatar} alt="User avatar" className="avatar" />
+        <Name className="name">{username}</Name>
+        <Tag className="tag">@{tag}</Tag>
+        <Location className="location">{location}</Location>
+      </Description>
       <Stats className="stats">
         <StatsItem>
           <StatsItemLabel className="label">Followers</StatsItemLabel>

@@ -5,7 +5,7 @@ export const TransactionTable = styled.table`
 `;
 
 export const TableHeadRow = styled.tr`
-  background-color: aqua;
+  background-color: darkcyan;
 `;
 
 export const TableHead = styled.th`
