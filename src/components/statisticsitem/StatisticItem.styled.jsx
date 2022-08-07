@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-const colors = ['red', 'blue', 'green', 'yellow', 'orange', 'brown'];
+const colors = ['yellow', 'red', 'blue', 'green', 'orange', 'brown'];
 
 export const StatCard = styled.li`
   display: flex;
@@ -10,5 +10,11 @@ export const StatCard = styled.li`
   background-color: ${p => colors[p.id[3]]};
 `;
 
-export const StatCardLabel = styled.span``;
-export const StatCardPercentage = styled.span``;
+export const StatCardLabel = styled.span`
+  color: white;
+  margin-bottom: 6px;
+`;
+export const StatCardPercentage = styled.span`
+  color: white;
+  font-size: 1.2em;
+`;

@@ -7,6 +7,11 @@ export const StatisticsCard = styled.section`
   width: 250px;
 `;
 
+export const StatisticsTitle = styled.h2`
+  color: grey;
+  text-transform: uppercase;
+`;
+
 export const StatList = styled.ul`
   padding: 0;
   display: flex;
