@@ -1,18 +1,19 @@
 import PropTypes from 'prop-types';
 import StatisticsItem from 'components/statisticsitem/StatisticItem';
+import { StatisticsCard, StatList } from './Statistics.styled';
 
 const Statistics = function (p) {
   const { title, stats } = p;
   //   console.log(p);
   return (
-    <section class="statistics">
-      {title && <h2 class="title">{title}</h2>}
-      <ul class="stat-list">
+    <StatisticsCard className="statistics">
+      {title && <h2 className="title">{title}</h2>}
+      <StatList className="stat-list">
         {stats.map(item => (
           <StatisticsItem item={item} key={item.id} />
         ))}
-      </ul>
-    </section>
+      </StatList>
+    </StatisticsCard>
   );
 };
 
